@@ -2,7 +2,7 @@ import pyautogui
 import time
 import pandas as pd
 
-pyautogui.PAUSE = 0.3
+pyautogui.PAUSE = 0.4
 link = "https://dlp.hashtagtreinamentos.com/python/intensivao/login"
 
 pyautogui.press('win')
@@ -33,31 +33,31 @@ for linha in tabela.index:
     pyautogui.click(x=748, y=303)
 
     codigo = tabela.loc[linha, 'codigo']
-    pyautogui.write(str(codigo)) #código
+    pyautogui.write(str(codigo))
     pyautogui.press('tab')
 
     marca = tabela.loc[linha, 'marca']
-    pyautogui.write(str(marca)) #marca
+    pyautogui.write(str(marca))
     pyautogui.press('tab')
 
     tipo = tabela.loc[linha, 'tipo']
-    pyautogui.write(str(tipo)) #tipo
+    pyautogui.write(str(tipo))
     pyautogui.press('tab')
 
     categoria = tabela.loc[linha, 'categoria']
-    pyautogui.write(str(categoria)) #categoria
+    pyautogui.write(str(categoria))
     pyautogui.press('tab')
 
     preco_unitario = tabela.loc[linha, 'preco_unitario']
-    pyautogui.write(str(preco_unitario)) #preço
+    pyautogui.write(str(preco_unitario))
     pyautogui.press('tab')
 
     custo = tabela.loc[linha, 'custo']
-    pyautogui.write(str(custo)) #custo
+    pyautogui.write(str(custo))
     pyautogui.press('tab')
 
     obs = tabela.loc[linha, 'obs']
-    pyautogui.write(str(obs)) #observações
+    pyautogui.write(str(obs))
     pyautogui.press('tab')
 
     pyautogui.press('enter')
